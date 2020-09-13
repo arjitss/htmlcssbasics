@@ -1,0 +1,29 @@
+span.targeterror{
+    display: inline;
+    border: 2px solid crimson;
+    margin: 20px;
+    padding: 20px;  
+}
+div{
+    border: 2px solid crimson;
+    margin: 20px;
+    padding: 20px;
+}
+p.success{
+    color: darkolivegreen;
+}
+h1.success.headbound{
+    color: forestgreen;
+    border: 2px gold solid;
+}
+h1.success{
+    color: forestgreen;
+}
+a[href]{
+    background-color: hotpink;
+    color: mediumvioletred
+}
+a[href="www.facebook.com"]{
+    background-color: hsl(221, 78%, 45%);
+    color: white
+}
