@@ -3,28 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Basics</title>
     <link rel="stylesheet" href="./styles.css">
+    <title>Test WebSite</title>
 </head>
 <body>
-    <h1>CSS Basic Body</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Tempora voluptatem provident voluptatibus culpa ipsum quod quibusdam asperiores, 
-        at aperiam distinctio et tenetur iure eum corporis. 
-        Beatae qui esse iusto voluptates.
-    </p>
-    <div>
-        <h2> This is Basic CSS PoC</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Distinctio doloremque repellendus, 
-            voluptatibus laborum optio similique labore neque libero eius ea! Deserunt, 
-            voluptas minus vitae doloremque deleniti saepe dolorum tempore sequi!
-        </p>
+    <header>
+        <!-- Header is mainly used for things like Navigation, Site Title etc -->
+        <h1>Mario Club</h1>
+    </header>
+
+    <section class="banner">
+        <!-- Defines certain section of the Webpage 
+             This is to logically divide the Webpage
+        -->  
+        <img src="img/banner.png" alt="Welcome to Mario Banner">
+        <div class="welcome">
+            <h2>Welcome to <br><span>Mario Club</span></h2>
+        </div>        
+    </section>
+
+    
+    <nav class="main-nav">
+        <!-- another HTML5 symentic used for Navigation -->
         <ul>
-            <li>Learn <i class="fa fa-css3" aria-hidden="true">CSS</i></li>
-            <li>Learn <strong>HTML</strong></li>
-            <li>Learn Bootstrap</li>
+            <li><a href="/join.html" class="join">Join the Club</a></li>
+            <li><a href="/news.html">Latest News</a></li>
+            <li><a href="/games.html">New Games</a></li>
+            <li><a href="/contact.html">Contact</a></li>
         </ul>
-    </div>
+    </nav>
+
+    <main>
+        <!-- HTML 5 symentic
+             This is for the main content of Webpage unique to the page
+         -->
+        <article>
+            <!-- HTML 5 symentic
+                Write more details
+            -->
+            <h2>Its Mario</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Alias obcaecati maxime dicta odio amet explicabo distinctio nemo fugiat ratione tempora, 
+                debitis iure neque dolores illum recusandae minima laboriosam deserunt assumenda?
+            </p>
+            <ul class="images">
+                <li><img src="./img/thumb-1.png" alt="thumb1"></li>
+                <li><img src="./img/thumb-2.png" alt="thumb2"></li>
+            </ul>
+        </article>
+    </main>
+
+    <section class="join">
+        <!-- Defines certain section of the Webpage 
+             This is to logically divide the Webpage
+        -->  
+        <h2>Join Today</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Repudiandae obcaecati optio eos vitae expedita
+            , adipisci deleniti voluptates quibusdam sint animi amet asperiores 
+            illo quisquam voluptate incidunt eum itaque nisi! Repudiandae.</p>        
+        <form>
+            <input type="email" name="email" placeholder="abc@email.com" required>
+        </form>
+    </section>
+    <footer>
+        <p class="copyright">Copyrigh 2019 Mario Club</p>
+    </footer>
 </body>
 </html>

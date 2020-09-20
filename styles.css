@@ -1,4 +1,4 @@
-h1{
+/* h1{
   color: orangered;
   background-color: bisque;
   font-size: 130%;
@@ -14,14 +14,146 @@ p{
     column-gap: 60px;
 }
 ul{
-    /* border-width: 4px;
+     border-width: 4px;
     border-style: groove;
-    border-color: blue; */
-
-    /* border: 4px solid crimson  */
+    border-color: blue; 
+     border: 4px solid crimson  
     border-bottom: 3px solid crimson;
 }
 li{
     list-style-type: square;
     text-shadow: 2px 3px lightsalmon;
+} */
+
+/* 4 Key types of position is there
+    1. Fixed - To Fix a particular pannel
+    2. Sticky - To Fix a particular pannel after a certain scrol
+    3. Absolute - To remove the actual space of the element from the HTML doc and have it moving
+    4. Relative - To have overlapping elements
+    // Relative & Absolute as often used together
+*/
+
+/* CSS Cleardown */
+
+body, h1, ul, li, h2, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* CSS Cleardown */
+
+header {
+    background-color: tomato;
+    padding: 0.1%;
+    text-align: center;
+    color: wheat;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+header h1 {
+    border: 8px solid white;
+    border-radius: 35%;
+    display: inline-block;
+    font-size: 40px;
+}
+.banner img {
+    max-width: 100%;
+    position: relative;
+}
+.banner .welcome {
+    position: absolute;
+    top: 30%;
+    color:white;
+    text-emphasis-color: gold;
+    padding: 10%;
+    font-size: 130%;
+}
+.banner h2 span {
+    font-size: 1.4em
+}
+
+nav{
+    background-color: lightgray;
+    padding: 20px 10px;
+    position: sticky;
+    top: 10%
+}
+
+nav ul{
+    white-space: nowrap;
+    margin: 0 auto;
+    max-width: 1800px;
+}
+nav li {
+    display: inline-block;
+    width: 25%;
+}
+nav li a {
+    text-decoration: none;
+    color: #4B4B4B;
+}
+nav li a.join{
+    color: red;
+    text-emphasis: bold;
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 40px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+article h2 {
+    color:red;
+    font-size: 32px;
+}
+article p {
+    line-height: 2em;
+}
+
+
+.image{
+    text-align: center;
+}
+article ul{
+    text-align: center;
+    white-space: nowrap;
+}
+    
+article li{
+    display: inline-block;
+    max-width: 40%;
+    padding: 5%;
+}
+
+article li img {
+    max-width: 100%;
+}
+.join{
+    background-color: lightblue;
+    color: lightseagreen;
+    text-align: center;
+
+}
+.join h2 {
+    color: darkblue;
+    padding: 20px 20px
+}
+
+form input{
+    margin: 20px 10px;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 30px;
+    border: 4px solid silver;
+}
+footer {
+    background-color: red;
+    color: seashell;
+    padding: 10px;
+    text-align: center;
 }
